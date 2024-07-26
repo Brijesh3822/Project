@@ -1,0 +1,167 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+.items {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  border: 5px solid #ffffff;
+  background-color: #ffffff;
+  text-align: center;
+  align-items: center;
+  box-shadow: 5px 5px #ffffff;
+  position: static;
+  list-style-type: none;
+  margin-left: 200px;
+}
+
+.subitems {
+  display: flex;
+  flex-direction: row;
+  margin-left: 400px;
+}
+
+li {
+  margin-left: 60px;
+}
+.headrlist:hover {
+  color: orange;
+}
+
+.submain {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 15px 40px -20px rgba(40, 44, 63, 0.15);
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+}
+
+.subother {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  padding-bottom: 10px;
+  margin-left: 400px;
+}
+
+.subother:hover {
+  color: orange;
+}
+
+.body {
+  margin-left: 200px;
+  margin-right: 200px;
+
+  background-color: #fcfdfd;
+}
+
+img {
+  margin-left: 30px;
+}
+
+.image1 {
+  border-radius: 20px;
+  width: 273px;
+  height: 182px;
+  position: relative;
+  object-fit: cover;
+}
+
+.offer1 {
+  position: absolute; 
+  bottom: 0px;
+  left: 26px;
+  color: white;
+  font-size: x-large;
+  background: linear-gradient(rgba(27, 30, 36, 0) 0%, rgb(27, 30, 36) 84.21%);
+  margin-left: 5px;
+  width: 100%;
+  text-indent: 10px;
+  border-radius: 20px;
+}
+
+.message1 {
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.contenar {
+  display: flex;
+  gap: 20px;
+}
+
+.footer {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 150px;
+}
+
+.subfooter {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.subfooter2 {
+  border: 2px solid rgba(2, 6, 12, 0.1);
+  width: 500px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: large;
+  padding: 16px;
+}
+
+.hidden {
+  border: 2px solid black;
+  height: 100px;
+  visibility: hidden;
+}
+
+.footer2 {
+  background-color: #f0f0f5;
+  height: 100px;
+}
+
+.footerend {
+  background-color: black;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footerlist1 {
+  color: white;
+}
+
+.listitems {
+  list-style-type: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.listhedding {
+  list-style-type: none;
+  color: white;
+}
+
+.subfootrend {
+  display: flex;
+  flex-direction: row;
+  margin-left: 400px;
+  gap: 40px;
+  font-size: large;
+}
+
+.fheading {
+  margin-left: 400px;
+  padding-top: 4px;
+  margin-bottom: 10px;
+}
