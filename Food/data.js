@@ -502,7 +502,8 @@ var data2 = [
   },
 ];
 
-function displayData() {
+function displayData(data) {
+  document.getElementById("box").innerHTML = "";
   data.map((el) => {
     const box = document.getElementById("box");
     box.setAttribute("class", "box");
@@ -561,15 +562,62 @@ function addtocart(data) {
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 
-const Beverages = data.filter(function (el) {
-  return el.foodCatogory == "Beverages";
-});
-console.log(Beverages);
+function foodCatogorydata(catogory) {
+  const fooddata = data.filter((el) => {
+    return el.foodCatogory == catogory;
+  });
+  data.sort((a, b) => {
+    return a.logo - b.logo;
+  });
+  displayData(fooddata);
+  console.log(fooddata);
+}
 
-const topdelas = data.filter(function (el) {
-  return el.foodCatogory == "Biryani";
-});
-console.log(topdelas);
+function topdelas() {
+  data.sort((a, b) => {
+    return a.logo - b.logo;
+  });
+  displayData(data);
+}
+
+// function foodbeverages() {
+//   const Beverages = data.filter(function (el) {
+//     return el.foodCatogory == "Beverages";
+//   });
+//   displayData(Beverages);
+// }
+//
+
+// const newtopdelas = data.filter(function (el) {
+//   return el.foodCatogory == "Biryani";
+// });
+// console.log(newtopdelas);
+
+// function menu() {
+//   const Burger = data.filter((element) => {
+//     return element.foodCatogory == "Burger";
+//   });
+//   console.log(Burger);
+
+//   const boxmodal = data.filter((element) => {
+//     return (
+//       element.foodCatogory == "Pop Corn Birayani Box" ||
+//       element.foodCatogory == "All Chicken Meal Box"
+//     );
+//   });
+//   console.log(boxmodal);
+
+//   const topdelas = data.filter((element) => {
+//     return element.foodCatogory == "Beverages";
+//   });
+
+//   const newtopdelas = topdelas.filter((element) => {
+//     return element.logo >= 40 && element.logo <= 500;
+//   });
+//   console.log(newtopdelas);
+//   console.log(topdelas);
+// }
+// menu();
 // var total = document.getElementById("total");
 // total.innerText = function alltotal(total) {
 //   return (total += logo);
