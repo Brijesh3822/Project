@@ -39,23 +39,11 @@
   padding: 0px;
   margin: 0px;
 } */
+
 body {
   font-family: "Montserrat", sans-serif;
 }
-.main::before {
-  display: table;
-  content: " ";
-}
-.headerdivmain::after {
-  clear: both;
-  display: table;
-  content: "";
-}
-@media screen and (min-width: 768px) {
-  .headerdivmain {
-    width: 100%;
-  }
-}
+
 .headerdivmain {
   height: 60px;
   background-color: #15161d;
@@ -122,21 +110,17 @@ body {
   grid-template-columns: 100px 100px 100px;
   padding-top: 10px;
 }
-.bodyproducts::before {
-  display: table;
-  content: " ";
-}
-.newproducts::after {
-  clear: both;
-  display: table;
-  content: "";
+
+.bodyproducts {
+  width: auto;
 }
 /* .addtocartbody {
   display: grid;
   grid-template-columns: 60% 400px;
 } */
+
 .dataproducts {
-  margin: 10px 200px;
+  margin: 25px 200px;
   display: grid;
   grid-template-columns: 360px 360px 360px 340px;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
@@ -179,6 +163,7 @@ body {
   border-bottom-right-radius: 10px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 14px;
 }
 
 .buttondeals1text {
@@ -203,6 +188,9 @@ body {
   background-image: url("https://themewagon.github.io/electro/img/hotdeal.png");
   height: 450px;
   position: relative;
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .offerbodyul {
   list-style-type: none;
@@ -231,7 +219,7 @@ body {
   top: 0;
   bottom: 0;
   left: 10;
-  margin: 80px;
+  margin: 50px;
 }
 .offerbodytext1 {
   font-size: 30px;
@@ -327,6 +315,8 @@ body {
   background-color: #d10024e6;
   color: white;
   border: none;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 .addtocartbutton:hover {
   cursor: pointer;
@@ -401,4 +391,205 @@ body {
   border: none;
   font-size: medium;
   width: 110px;
+}
+
+@media screen and (min-width: 992px) and (max-device-width: 1280px) {
+  .main {
+    width: auto;
+  }
+  .headerdivmain {
+    width: 98.6%;
+    grid-template-columns: 600px 100px 125px 100px;
+    justify-content: space-around;
+  }
+  .navigation {
+    width: 100%;
+  }
+
+  .bottomnavigation {
+    display: flex;
+    justify-content: center;
+  }
+  .midalbody {
+    height: 320px;
+    background-size: 100%;
+  }
+  .offerbody {
+    margin: 20px;
+    height: 100%;
+    height: auto;
+  }
+  .bodyproducts {
+    width: 100%;
+  }
+  .newproducts {
+    grid-template-columns: 500px 100px;
+    margin-left: 100px;
+    width: 80%;
+  }
+  .dataproducts {
+    margin: 0px 0px;
+    grid-template-columns: 320px 320px 320px;
+    justify-content: center;
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .footerdiv {
+    grid-template-columns: 300px 220px 220px 200px;
+    justify-content: center;
+  }
+  .addtocartheader {
+    margin: 20px 0px;
+    grid-template-columns: 60% 10% 10% 10%;
+  }
+  .addtocartheader {
+    
+    grid-template-columns: 65% 10% 10% 10%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .image_haeder {
+    width: 100px;
+  }
+
+  .midalbody {
+    background-image: none;
+    background-color: #e4e7ed;
+    height: 350px;
+  }
+  .offerbodyul {
+    grid-template-columns: 80px 80px 80px 80px;
+  }
+  .offerbodydetails {
+    width: 50px;
+    height: 40px;
+    line-height: 0.2;
+  }
+  .offerbodydetails h3 {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  .offerbodydetailstext {
+    font-size: 10px;
+  }
+  .Productslastshow {
+    display: none;
+  }
+  .newproducts {
+    margin-left: 0px;
+  }
+  .newproducts {
+    width: 100%;
+  }
+  .Products {
+    width: 390px;
+  }
+  .Products h2 {
+    text-align: center;
+  }
+  .dataproducts {
+    margin: 0px 0px;
+    grid-template-columns: 360px;
+  }
+  .footerdiv {
+    grid-template-columns: 250px;
+  }
+  .headerdivmain {
+    grid-template-columns: 120px;
+    height: 250px;
+    text-align: center;
+  }
+  .image_haeder {
+    width: 200px;
+    margin-left: -30px;
+  }
+  .addtocartheader {
+    margin: 0px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .addtocartbutton {
+    margin: 10px 0px;
+  }
+  .bottomnavigation {
+    margin: 0px 0px;
+  }
+  .bottomnavigation ul {
+    display: flex;
+    flex-direction: row;
+    font-weight: 500;
+    margin-left: -29px;
+    gap: 4px;
+  }
+  .bottomnavigationbutton {
+    color: black;
+  }
+  .signupmainbody {
+    width: 320px;
+  }
+  .signupmainbody button {
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-device-width: 600px) and (max-device-width: 992px) {
+  .headerdivmain {
+    grid-template-columns: 400px 100px 125px 100px;
+  }
+  .bottomnavigation {
+    margin: 0px 100px;
+  }
+  .offerbodydetails {
+    width: 55px;
+    height: 50px;
+  }
+  .offerbodydetails h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 0;
+  }
+  .offerbodydetailstext {
+    font-size: 15px;
+  }
+  .offerbody {
+    margin: 0px;
+  }
+  .offerbodyul {
+    grid-template-columns: 75px 75px 75px 75px;
+  }
+  .offerbodytext1 {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .offerbodytext2 {
+    font-size: 20px;
+    margin-top: -10px;
+    margin-left: 20px;
+  }
+  .offerbodybutton {
+    margin-top: -10px;
+  }
+  .midalbody {
+    height: 200px;
+  }
+  .newproducts {
+    margin-left: 20px;
+    grid-template-columns: 400px 100px;
+    width: 98%;
+  }
+  .dataproducts {
+    margin: 25px 0px;
+    grid-template-columns: 360px 360px;
+  }
+  .footerdiv {
+    grid-template-columns: 350px 200px;
+  }
+  .addtocartheader {
+    margin: 20px 0px;
+    grid-template-columns: 60% 10% 10% 10%;
+  }
 }

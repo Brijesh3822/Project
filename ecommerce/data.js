@@ -367,6 +367,10 @@ signoutbutton.addEventListener("click", () => {
   newsigninname.innerText = "Sign In";
 });
 console.log(signoutbutton);
+
+// window.onload = function () {
+//   window.location.href = "login.html";
+// };
 // window.onload = function () {
 //   newsigninname.innerText = "sign in";
 // };

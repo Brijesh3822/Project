@@ -2,13 +2,23 @@ window.onload = function () {
   const cartdata = localStorage.getItem("cart");
   const newcartdata = JSON.parse(cartdata);
   display(newcartdata);
-
+  console.log("newcartdata");
   var total = newcartdata.reduce((cr, pr) => {
     // return cr + pr.price;
     return cr + pr.price * 1;
   }, 0);
   const newtotal = document.getElementById("total");
   newtotal.innerText = total;
+  console.log(newtotal);
+
+  const newsigninname = document.getElementById("signupname");
+  const signinnamedata = localStorage.getItem("loginperson");
+  const newsignupdata = JSON.parse(signinnamedata);
+  if (newsignupdata) {
+    newsigninname.innerText = newsignupdata;
+  } else {
+    newsigninname.innerText = "Sign In";
+  }
 };
 function display(data) {
   data.map((el) => {
@@ -70,3 +80,9 @@ function display(data) {
     dataproducts.append(deals1);
   });
 }
+const proceedtopay = document.getElementById("proceedtopay");
+proceedtopay.addEventListener("click", () => {
+  alert("Payment Successfully Done");
+});
+
+// window.onload = function () {};
