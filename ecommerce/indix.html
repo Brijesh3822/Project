@@ -20,13 +20,19 @@
   <body>
     <div class="col-12">
       <div class="main">
-        <div class="headerdivmain">
+        <div class="headerdivmain" id="headerdivmain">
           <div class="col-3">
             <img
               class="image_haeder"
               src="https://themewagon.github.io/electro/img/logo.png"
             />
           </div>
+             <div  class="navbartopmenu" onclick="navbarToggle()">
+            <div class="navbarmenu"></div>
+            <div class="navbarmenu"></div>
+            <div class="navbarmenu"></div>
+         </div>
+          <div class="headdiv" id="headdiv">
           <div class="headerleft">
             <a class="linktopage" href="signin.html"  >
             <i class="fa fa-user" style="font-size: 24px; color: red"></i>
@@ -36,15 +42,16 @@
           <div class="headerleft">
             <a class="linktopage" href="addtocart.html"><i
               class="fa fa-shopping-cart"
-              style="font-size: 24px; color: red"
+              style="font-size: 24px; color: red;margin-left: -4px;"
             ></i>
              <span class="signin">Add to cart</span></a>
           </div>
           <div class="headerleft">
             <button class="signoutbutton" id="signout">
-            <i class="fa fa-sign-out" style="font-size:24px ; color: red;"></i>
+            <i class="fa fa-sign-out" style="font-size:24px ; color: red; margin-left: -6px;"></i>
             <span class="signin">Sign Out</span>
             </button>
+          </div>
           </div>
         </div>
       </div>
@@ -60,6 +67,7 @@
             <button onclick="newdata('Accessories')" class="bottomnavigationbutton">Accessories</button>
           </ul>
         </div>
+    
       </div>
     </div>
 

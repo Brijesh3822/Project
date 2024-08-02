@@ -48,14 +48,17 @@ body {
   height: 60px;
   background-color: #15161d;
   display: grid;
-  grid-template-columns: 800px 100px 125px 100px;
+  grid-template-columns: 1000px 100px;
   /* padding: 10px 450px; */
   padding: 10px;
   /* border: 2px solid red;
   width: 1200px; */
   justify-content: center;
 }
-
+.headdiv {
+  display: grid;
+  grid-template-columns: 100px 120px 100px;
+}
 .image_hedaer {
   color: white;
 }
@@ -392,7 +395,25 @@ body {
   font-size: medium;
   width: 110px;
 }
-
+.navbarmenu {
+  border-top: 2px solid red;
+  margin-bottom: 5px;
+  width: 20px;
+}
+.navbartopmenu {
+  display: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.headerleft2 {
+  display: none;
+}
+.remove {
+  margin-left: 60px;
+}
+.displaydata {
+  margin: 0px 10px;
+}
 @media screen and (min-width: 992px) and (max-device-width: 1280px) {
   .main {
     width: auto;
@@ -445,15 +466,55 @@ body {
     grid-template-columns: 60% 10% 10% 10%;
   }
   .addtocartheader {
-    
     grid-template-columns: 65% 10% 10% 10%;
   }
 }
 @media screen and (max-width: 600px) {
   .image_haeder {
     width: 100px;
+    margin-left: 100px;
+    margin-top: 20px;
   }
 
+  .headerdivmain {
+    grid-template-columns: 120px;
+    height: 150px;
+  }
+  .navbartopmenu {
+    position: absolute;
+    top: 72px;
+    height: 100px;
+  }
+  .headerleft {
+    margin-left: 0px;
+  }
+  .headdiv {
+    margin-left: -100px;
+    /* position: absolute;
+    top: 0; */
+    display: none;
+  }
+  .show {
+    display: flex !important;
+    flex-direction: column;
+    text-align: start;
+    margin-left: 0px;
+  }
+  .signoutbutton {
+    margin-left: -7px;
+  }
+  .signin {
+    width: 150px;
+  }
+  .showsecound {
+    height: 270px;
+  }
+  /* .headdiv.active {
+    right: 0;
+  } */
+  .navbartopmenu {
+    display: block;
+  }
   .midalbody {
     background-image: none;
     background-color: #e4e7ed;
@@ -479,8 +540,6 @@ body {
   }
   .newproducts {
     margin-left: 0px;
-  }
-  .newproducts {
     width: 100%;
   }
   .Products {
@@ -496,11 +555,7 @@ body {
   .footerdiv {
     grid-template-columns: 250px;
   }
-  .headerdivmain {
-    grid-template-columns: 120px;
-    height: 250px;
-    text-align: center;
-  }
+
   .image_haeder {
     width: 200px;
     margin-left: -30px;

@@ -1,5 +1,6 @@
 var data = [
   {
+    id: 1,
     imgurl: "https://themewagon.github.io/electro/img/product01.png",
     name: "Dell Latitude 7479",
     price: "69000",
@@ -11,6 +12,7 @@ var data = [
     Categories: "topdeals",
   },
   {
+    id: 2,
     imgurl: "https://themewagon.github.io/electro/img/product04.png",
     name: "Samsung Galaxy Tab S9 ",
     price: "40000",
@@ -22,6 +24,7 @@ var data = [
     Categories: "topdeals",
   },
   {
+    id: 3,
     imgurl: "https://themewagon.github.io/electro/img/product07.png",
     name: "Samsung S24",
     price: "89000",
@@ -33,6 +36,7 @@ var data = [
     Categories: "topdeals",
   },
   {
+    id: 4,
     imgurl: "https://themewagon.github.io/electro/img/product03.png",
     name: "Hp Pavilion 9879 ",
     price: "78000",
@@ -44,6 +48,7 @@ var data = [
     Categories: "topdeals",
   },
   {
+    id: 5,
     imgurl: "https://themewagon.github.io/electro/img/product02.png",
     name: "Boat Rockerz 7479",
     price: "1100",
@@ -55,6 +60,7 @@ var data = [
     Categories: "topdeals",
   },
   {
+    id: 6,
     imgurl: "https://themewagon.github.io/electro/img/product01.png",
     name: "Dell Latitude 7479",
     price: "69000",
@@ -66,6 +72,7 @@ var data = [
     Categories: "laptops",
   },
   {
+    id: 7,
     imgurl: "https://themewagon.github.io/electro/img/product08.png",
     name: "Hp Pavilion 79",
     price: "69000",
@@ -77,6 +84,7 @@ var data = [
     Categories: "laptops",
   },
   {
+    id: 8,
     imgurl: "https://themewagon.github.io/electro/img/product06.png",
     name: "Lenovo legion 5",
     price: "89000",
@@ -88,6 +96,7 @@ var data = [
     Categories: "laptops",
   },
   {
+    id: 9,
     imgurl: "https://themewagon.github.io/electro/img/product03.png",
     name: "Hp Pavilion 9879 ",
     price: "78000",
@@ -99,6 +108,7 @@ var data = [
     Categories: "laptops",
   },
   {
+    id: 10,
     imgurl: "https://themewagon.github.io/electro/img/product06.png",
     name: "Lenovo legion 9",
     price: "69000",
@@ -110,6 +120,7 @@ var data = [
     Categories: "laptops",
   },
   {
+    id: 11,
     imgurl: "https://themewagon.github.io/electro/img/product03.png",
     name: "Hp Pavilion 8879 ",
     price: "58000",
@@ -121,6 +132,7 @@ var data = [
     Categories: "laptops",
   },
   {
+    id: 12,
     imgurl: "https://themewagon.github.io/electro/img/product08.png",
     name: "Hp Pavilion 56",
     price: "62000",
@@ -132,6 +144,7 @@ var data = [
     Categories: "laptops",
   },
   {
+    id: 13,
     imgurl: "https://themewagon.github.io/electro/img/product01.png",
     name: "Dell Latitude 7489",
     price: "79000",
@@ -143,6 +156,7 @@ var data = [
     Categories: "laptops",
   },
   {
+    id: 14,
     imgurl: "https://themewagon.github.io/electro/img/product07.png",
     name: "Samsung S24",
     price: "89000",
@@ -154,6 +168,7 @@ var data = [
     Categories: "phone",
   },
   {
+    id: 15,
     imgurl: "https://themewagon.github.io/electro/img/product04.png",
     name: "Mi  Tab S9 ",
     price: "46000",
@@ -165,6 +180,7 @@ var data = [
     Categories: "phone",
   },
   {
+    id: 16,
     imgurl: "https://themewagon.github.io/electro/img/product04.png",
     name: "Samsung Galaxy Tab S9 ",
     price: "40000",
@@ -176,6 +192,7 @@ var data = [
     Categories: "phone",
   },
   {
+    id: 17,
     imgurl: "https://themewagon.github.io/electro/img/product07.png",
     name: "Samsung S23",
     price: "79000",
@@ -187,6 +204,7 @@ var data = [
     Categories: "phone",
   },
   {
+    id: 18,
     imgurl: "https://themewagon.github.io/electro/img/product02.png",
     name: "Boat Rockerz 7479",
     price: "1100",
@@ -198,6 +216,7 @@ var data = [
     Categories: "Accessories",
   },
   {
+    id: 19,
     imgurl: "https://themewagon.github.io/electro/img/product09.png",
     name: "Sony-Alpha 6100",
     price: "73100",
@@ -209,6 +228,7 @@ var data = [
     Categories: "Accessories",
   },
   {
+    id: 20,
     imgurl: "https://themewagon.github.io/electro/img/product02.png",
     name: "Boat Rockerz 6479",
     price: "1400",
@@ -220,6 +240,7 @@ var data = [
     Categories: "Accessories",
   },
   {
+    id: 21,
     imgurl: "https://themewagon.github.io/electro/img/product09.png",
     name: "Sony-Alpha  79",
     price: "90000",
@@ -231,6 +252,7 @@ var data = [
     Categories: "Accessories",
   },
   {
+    id: 22,
     imgurl: "https://themewagon.github.io/electro/img/product09.png",
     name: "Sony-Alpha  79",
     price: "90000",
@@ -242,6 +264,7 @@ var data = [
     Categories: "topdeals",
   },
   {
+    id: 23,
     imgurl: "https://themewagon.github.io/electro/img/product06.png",
     name: "Lenovo legion 5",
     price: "89000",
@@ -252,8 +275,8 @@ var data = [
     button: "Add to cart",
     Categories: "topdeals",
   },
-
   {
+    id: 24,
     imgurl: "https://themewagon.github.io/electro/img/product02.png",
     name: "Boat Rockerz 6479",
     price: "1400",
@@ -345,7 +368,7 @@ function newdata(nCategories) {
 var cart = [];
 
 function addtocart(data) {
-  cart = [...cart, data];
+  cart = [...cart, { ...data, qty: 1, id: cart.length + 1 }];
   console.log(cart);
   localStorage.setItem("cart", JSON.stringify(cart));
 }
@@ -360,13 +383,30 @@ window.onload = function () {
     newsigninname.innerText = "Sign In";
   }
 };
-
 const signoutbutton = document.getElementById("signout");
 signoutbutton.addEventListener("click", () => {
   localStorage.removeItem("loginperson");
   newsigninname.innerText = "Sign In";
 });
 console.log(signoutbutton);
+
+// var navbar = document.getElementById("navbartopmenu");
+// const navbarlist = document.getElementById("headdiv");
+// const navbarToggle =  () => {
+//   if (navbarlist.style.display === "block") {
+//     navbarlist.style.display = "none";
+//   } else {
+//     navbarlist.style.display = "block";
+//   }
+// };
+
+const navbar = document.getElementById("navbartopmenu");
+const navbarlist = document.getElementById("headdiv");
+const headerdivmain = document.getElementById("headerdivmain");
+const navbarToggle = () => {
+  navbarlist.classList.toggle("show");
+  headerdivmain.classList.toggle("showsecound");
+};
 
 // window.onload = function () {
 //   window.location.href = "login.html";
